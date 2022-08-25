@@ -1,0 +1,231 @@
+/* home page & header */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: constant;
+}
+
+
+#header{
+    align-items: center;
+}
+
+#titletext{
+    width: 300px;
+    align-items: center;
+}
+.navbar{
+    background-color: white;
+    top: 0;
+    border-bottom: maroon solid 2px;
+
+}
+
+.navbar ul{
+    display: flex;
+    position: relative;
+    list-style: none;
+    align-items: center;
+    margin: 20px auto;
+    right: 100px;
+}
+
+
+.navbar ul li{
+    font-family: Quicksand;
+    font-size: 1.1rem;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: maroon;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+
+.navbar ul li a:hover{
+    background-color: maroon;
+    color: white;
+    box-shadow: 0px 0px 10px;
+    /*font-size: 1.5rem;*/
+}
+
+
+.social-links{
+    position: relative;
+    right: 40px;
+}
+
+
+.social-links a i{
+    color: maroon;
+    size: 24px 24px;
+    font-size: 1.5rem;
+}
+
+
+.social-links a:hover i{
+    background-color: maroon;
+    color: white;
+    /*font-size:  2.0rem;*/
+}
+
+
+.headings{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: Quicksand;
+    font-size: 2rem;
+    color: maroon;
+}
+
+#headerHome::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background: url('abhimainpage.jpeg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+/* About me */
+ 
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    color: maroon;
+}
+
+body[light-mode=dark] #intro{
+    color: white;
+    background-color: #3B3B3B;
+}
+
+#intro p1{
+    font-size: 1.5rem;
+}
+
+/* resume */
+
+.resumeHeader{
+    font-family: Quicksand;
+    color: maroon;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body[light-mode=dark] .resumeHeader{
+    color: white;
+}
+
+body[light-mode=dark] {
+    color: white;
+    background-color: #3B3B3B;
+    
+}
+
+#embedresume{
+    margin: 0;
+    height: 100vh;
+    width: 50%;
+}
+
+/* dark toggle switch */
+
+
+
+.light-mode-button {
+    background:0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0);
+    right: 125px;
+}
+
+.light-mode-button:focus {
+    outline:none; /* Not ideal for accessibility */
+}
+
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50px;
+    height:20px;
+    border-radius: 20px;
+    background-color: #d6d7db;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top:2px;
+    left:2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
+
+body {
+    background-color: #f6f6f6;
+    transition: background-color .3s;
+}
+
+body[light-mode=dark] .navbar{
+    background-color: maroon;
+    top: 0;
+    border-bottom: white solid 2px;
+}
+
+body[light-mode=dark] .navbar ul li a{
+    color: white;
+}
+
+body[light-mode=dark] .navbar ul li a:hover{
+    color: maroon;
+    background-color: white;
+}
+
+body[light-mode=dark] .social-links a i{
+    color: white;
+}
+
+body[light-mode=dark] .social-links a:hover i{
+    color: maroon;
+    background-color: white;
+}
+
+body[light-mode=dark] .headings{
+    color: white;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1){
+    background-color: #ced4e2;
+    color: #141516;
+}
+
+body[light-mode=dark] .light-mode-button span:nth-child(2) {
+    left: 32px;
+    background-color: maroon;
+}
+

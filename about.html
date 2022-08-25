@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- doc type tells the browser, HTML 5+ or later --> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abhimanyu Singh's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+
+        <link href='bootstrap/css/bootstrap.min.css' rel="stylesheet">
+        <link href='icofont/icofont.min.css' rel="stylesheet">
+        <link href='boxicons/css/boxicons.min.css' rel="stylesheet">
+        <link href='venobox/venobox/venobox.css' rel="stylesheet">
+        <link href="OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="aos-master/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    </head> 
+    <body> 
+        <script>
+            var app = document.getElementsByTagName("BODY")[0];
+            if (localStorage.lightMode == "dark") {
+                app.setAttribute("light-mode", "dark");
+            }
+        </script>
+        <header id='headerAbout'>
+            <nav class="navbar">
+                <div id='titletext'>
+                    <h1 class="headings">About Me</h1>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+                <div class="social-links">
+                    <button 
+                        class="light-mode-button" 
+                        aria-label="Toggle Light Mode" 
+                        onclick="toggle_light_mode()">
+                        <span></span>
+                        <span></span>
+                    </button> 
+                    <a href="https://www.instagram.com/singh_is_kinng_/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhimanyu-singh-263084199/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/abhisingh815" class="github"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCSWmIqybXKsAEPqOchwjRUw" class="youtube"><i class="bx bxl-youtube"></i></a>
+
+
+                </div>
+            </nav>
+        </header>
+        <div id='intro'>
+            <h1>Abhimanyu Singh</h1>
+            <p1 id='description'>Senior at Texas A&M studying B.S. in Computer Engineering (CEEN)</p1>
+        </div>
+        </section>
+
+        <script>
+            function toggle_light_mode() {
+                var app = document.getElementsByTagName("BODY")[0];
+                if (localStorage.lightMode == "dark") {
+                localStorage.lightMode = "light";
+                app.setAttribute("light-mode", "light");
+                } else {
+                localStorage.lightMode = "dark";
+                app.setAttribute("light-mode", "dark");
+                }		
+            }
+        </script>
+    </body>
+</html>

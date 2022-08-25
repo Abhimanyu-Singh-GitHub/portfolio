@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!-- doc type tells the browser, HTML 5+ or later --> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abhimanyu Singh's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+
+        <link href='bootstrap/css/bootstrap.min.css' rel="stylesheet">
+        <link href='icofont/icofont.min.css' rel="stylesheet">
+        <link href='boxicons/css/boxicons.min.css' rel="stylesheet">
+        <link href='venobox/venobox/venobox.css' rel="stylesheet">
+        <link href="OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="aos-master/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    </head> 
+    <body> 
+        <script>
+            var app = document.getElementsByTagName("BODY")[0];
+            if (localStorage.lightMode == "dark") {
+                app.setAttribute("light-mode", "dark");
+            }
+        </script>
+        <header id='header'>
+            <nav class="navbar">
+                <div id='titletext'>
+                    <h1 class="headings">Portfolio</h1>
+                </div>                   <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+                <div class="social-links">
+                    <button 
+                        class="light-mode-button" 
+                        aria-label="Toggle Light Mode" 
+                        onclick="toggle_light_mode()">
+                        <span></span>
+                        <span></span>
+                    </button> 
+                    <a href="https://www.instagram.com/singh_is_kinng_/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhimanyu-singh-263084199/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/abhisingh815" class="github"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCSWmIqybXKsAEPqOchwjRUw" class="youtube"><i class="bx bxl-youtube"></i></a>
+
+                </div>
+            </nav>
+        </header>
+         <!-- MAIN (Center website) -->
+<div class="main">
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="Legionlogo.webp" alt="Legion" width="100px" height="120px">
+          <h3><a href="https://www.tamulegion.com/">LEGION Men's Organization</a></h3> 
+          <p>Philanthropy Officer for TAMU Legion, we raise money for Camp Sweeney by holding monthly profit shares 
+              and a once a semester concert with local bands and djs. We also help maintain the camp during the offseason. 
+              Legion is committed to service in the College Station/Bryan community as well.  </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="torreslogo.webp" alt="Torres" width="250px">
+          <h3><a href="https://www.torresassociatesllc.com/">Torres & Associates</a></h3>
+          <p>Summer 2021 Internship, I worked on a team of Computer Engineering Interns and Civil Engineers 
+              to continue to develop a Flood Early Warning System for the City of Bryan. This project contained many 
+              facets, including a first of it's kind, IoT based wireless communication hiearchy that controls all aspects
+              of the Flood Warning System. This oppurtunity really helped me build a professional presence, I was able to 
+              meet many engineers and city technicians, I got to partake in professional meetings that both related to our 
+              project, and also some that did not. The work environment was that of a small start up company, and I learned 
+              how to communicate within this team. The work was fun, hard, but most importantly, it was very rewarding. 
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="gokart.jpg" alt="Go Kart" width="125px">
+          <h3>Electric Go Kart</h3>
+          <p>I built an Electric Go Kart in the summer of 2019, I bought an old rusted go kart and sanded down the frame 
+              and welded the front wheel arms as they weren't reinforced. The go kart recieved a paint job, then I fitted 
+            it with a 2kW Brushless DC motor, and a 48V 12Ah battery system and controller. After completing this build, I 
+            realized that the battery technology for this specifi use case was not readily available for under a good amount 
+            money. The sealed lead acid batteries that I used were simply not able to discharge at a rate fast enough to give 
+            me the right to push the motor to its limit. After this I decided to fit a tuned 4 stroke lawnmower engine 
+            this gave me more top speed and a much larger range as well. I miss the electric motor's torque, but the high revs
+            of the 212cc is a lot of fun around corners.  </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content">
+      <img src="lakewayfop.jpg" alt="parkservice" >
+      <h3><a href="http://www.lakewayfop.org/">Friends of the Park, Lakeway TX</a></h3>
+      <p>I love volunteering with the Friends of the Park, we take care of one of the most extensive trail networks in Austin. 
+          The Canyonlands Trails are a hidden beauty, and we get to make sure that they are in great condtions for hikers, mountainbike riders, and 
+         all other visitors. Branch trimming, path maintenence, hazardous waste cleanup are some of the things that we work on to keep the Canyonlands in shape. </p>
+    </div>
+    
+    <!-- END MAIN -->
+    </div> 
+        <script>
+            function toggle_light_mode() {
+                var app = document.getElementsByTagName("BODY")[0];
+                if (localStorage.lightMode == "dark") {
+                localStorage.lightMode = "light";
+                app.setAttribute("light-mode", "light");
+                } else {
+                localStorage.lightMode = "dark";
+                app.setAttribute("light-mode", "dark");
+                }		
+            }
+        </script>
+    </body>
+</html>
